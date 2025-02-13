@@ -1,0 +1,305 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel ON</title>
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Hind+Mysuru:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/logo1.png">
+  </head>
+  <body>
+    
+    <!-- Banner Top -->
+    <div class="inicial-banner-container">
+      <div class="inicial-banner">
+        <img src="/banners-imgs/banner-top.gif" class="bannertop-desktop">
+        
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="/logo.png" alt="Logo Pixel" class="logo">
+      </div>
+      <input type="text" placeholder="Pesquise..." class="search-bar-mobile">
+      <div class="navbar-center">
+        <input type="text" placeholder="Pesquise..." class="search-bar">
+        <button class="search-icon">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search">
+        </button>
+      </div>
+      <div class="navbar-right">
+        <a href="/index.html" class="nav-text">Home</a>
+        <a href="/PRODUTOS/produtos.html" class="nav-text">Produtos</a>
+        <a href="/SOBRENOS/sobre.html" class="nav-text">Sobre nós</a>
+        <a href="/SUPORTE/suporte.html"><i class="fas fa-circle-question"></i></a>
+        <button onclick="location.href='/LOGIN/login.html'" class="login-button">Login</button>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="/index.html" >Home</a>
+      <a href="/PRODUTOS/produtos.html">Produtos</a>
+      <a href="/SOBRENOS/sobre.html">Sobre nós</a>
+      <a href='/PRODUTOS/produtos.html#topvendas'>Top vendas</a>
+      <a href='/PRODUTOS/produtos.html#kitgamer'>Kitgamer</a>
+      <a href='/PRODUTOS/produtos.html#laptops'>Laptops</a>
+      <a href='/PRODUTOS/produtos.html#monitores'>Monitores</a>
+      <a href='/PRODUTOS/produtos.html#perifericos'>Periféricos</a>
+      <a href='/PRODUTOS/produtos.html#pecas'>Peças</a>
+      <a href="#">Seus favoritos</a>
+      <a href="/LOGIN/login.html">Login</a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    <!-- Secondary Navigation Bar -->
+    <div class="secondary-navbar">
+      <div class="row-all">
+        <a href="/PRODUTOS/produtos.html#topvendas">Top vendas</a>
+        <a href="/PRODUTOS/produtos.html#kitgamer">Kitgamer</a>
+        <a href="/PRODUTOS/produtos.html#laptops">Laptops</a>
+        <a href="/PRODUTOS/produtos.html#monitores">Monitores</a>
+        <a href="/PRODUTOS/produtos.html#perifericos">Periféricos</a>
+        <a href="/PRODUTOS/produtos.html#pecas">Peças</a>
+        <button class="fav-button">Seus favoritos</button>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+
+  <!-- Sobre nos -->
+
+  <!-- Header -->
+  <header>
+    <img src="/SOBRENOS/header&icons-img/tst.gif" alt="Imagem de Fundo" >
+    <div class="header-content">
+      <h1 class="header-title">A tecnologia que você merece com a qualidade que você confia</h1>
+      <p class="header-subtitle">Seu parceiro em tecnologia, oferecendo qualidade e inovação em cada produto!</p>
+
+      <!-- Botão Continue Navegando -->
+      <div class="button-wrapper">
+        <button class="shine-button">
+          <span class="shine-content"  onclick="window.location.href='/PRODUTOS/produtos.html'" >Continue Navegando</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!--Últimas reviews-->
+  <div class="container-review">
+    <div class="cards-review-container">
+      <div class="card-rewiew">
+        <div class="estrela-review-container">
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+        </div>
+        
+        <h2 class="avaliacao-produto">Qualidade Incrível</h2>
+        <p class="info-rewiew">Superou todas as minhas expectativas!</p>
+        
+        <div class="imagem-nome">
+          <img src="/SOBRENOS/header&icons-img/review1.jpg" alt="Foto de Lucas" class="imgcliente">
+          <p class="namecliente">Lucas</p>
+        </div>
+      </div>
+
+      <div class="card-rewiew">
+        <div class="estrela-review-container">
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+        </div>
+        
+        <h2 class="avaliacao-produto">Entrega no Prazo</h2>
+        <p class="info-rewiew">Chegou no prazo e bem embalado!</p>
+        
+        <div class="imagem-nome">
+          <img src="/SOBRENOS/header&icons-img/review2.jpg" alt="Foto de Fernanda" class="imgcliente">
+          <p class="namecliente">Fernanda</p>
+        </div>
+      </div>
+
+      <div class="card-rewiew">
+        <div class="estrela-review-container">
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+          <span class="estrela-review">&#9733;</span>
+        </div>
+        
+        <h2 class="avaliacao-produto">Ótimo Custo-Benefício</h2>
+        <p class="info-rewiew">Valeu muito a pena, recomendo a todos!</p>
+        
+        <div class="imagem-nome">
+          <img src="/SOBRENOS/header&icons-img/review3.jpg" alt="Foto de Ricardo" class="imgcliente">
+          <p class="namecliente">Ricardo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Imagem e texto ao lado abaixo do header -->
+  <div class="content-below-header">
+    <div class="image">
+      <img src="/logo.png" alt="Imagem Inspiradora">
+    </div>
+    <div class="text">
+
+      <!-- Título abaixo do header -->
+      <h1 class="title">Sobre nós</h1>
+      <p class="text-right">Bem-vindo(a) à PIXEL ON! Somos uma empresa dedicada à tecnologia, oferecendo periféricos, peças, computadores e muito mais. Nosso compromisso é entregar qualidade, excelência e criar relações duradouras com nossos clientes.<br>
+        Com uma equipe apaixonada e especializada, trabalhamos diariamente para transformar desafios em oportunidades e superar expectativas. Valorizamos a confiança de nossos clientes e buscamos impactar positivamente a vida das pessoas por meio de nossos produtos e serviços.
+        Juntos, vamos além!<br>
+          Com uma equipe apaixonada e especializada, trabalhamos diariamente para transformar desafios em oportunidades e superar expectativas. Valorizamos a confiança de nossos clientes e buscamos impactar positivamente a vida das pessoas por meio de nossos produtos e serviços.
+        Juntos, vamos além!
+      </p>
+    </div>
+  </div>
+
+  <!--O que fazemos-->
+  <section class="secao-o-que-fazemos">
+    <h2 class="titulo-o-que-fazemos">O que a gente faz?</h2>
+    <div class="linha-decorativa"></div>
+    <div class="container-o-que-fazemos">
+        <div class="item-o-que-fazemos">
+            <div class="icone-o-que-fazemos">&#128722;</div> <!-- 🛒 -->
+            <p class="descricao-o-que-fazemos">Venda de computadores, acessórios, peças e periféricos.</p>
+        </div>
+        <div class="item-o-que-fazemos">
+            <div class="icone-o-que-fazemos">&#128187;</div> <!-- 💻 -->
+            <p class="descricao-o-que-fazemos">Consultoria para escolha do equipamento ideal para sua necessidade.</p>
+        </div>
+        <div class="item-o-que-fazemos">
+            <div class="icone-o-que-fazemos">&#9881;&#65039;</div> <!-- ⚙️ -->
+            <p class="descricao-o-que-fazemos">Suporte para instalação de software e configuração de dispositivos.</p>
+        </div>
+        <div class="item-o-que-fazemos">
+            <div class="icone-o-que-fazemos">&#128295;</div> <!-- 💻🔧 -->
+            <p class="descricao-o-que-fazemos">Montagem de PCs personalizados para games, trabalho e estudos.</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Texto à esquerda e imagem à direita-->
+  <div class="content-text-left-image-right">
+    <div class="text">
+      <p class="text-left">
+        A PIXEL ON foi criada por Maria Rita, Luana, Thiago, Gustavo e Maurício com o objetivo de transformar o mercado de tecnologia. A equipe, com habilidades complementares, uniu forças para fundar uma empresa focada em oferecer soluções tecnológicas de alta qualidade, sempre com um atendimento diferenciado. A missão desde o início tem sido superar as expectativas dos clientes, proporcionando produtos inovadores e um serviço de excelência. Com compromisso, dedicação e confiança, a PIXEL ON busca impactar positivamente a vida das pessoas, sempre pronta para enfrentar novos desafios e ir além.
+
+        Hoje, temos escritórios espalhados por todo o Brasil, permitindo-nos atender nossos clientes de diferentes regiões com agilidade e proximidade. Nossa presença nacional reflete nosso compromisso em levar tecnologia de ponta e soluções personalizadas para todos, independentemente de onde estejam. Estamos em constante crescimento, sempre com o objetivo de expandir nossa rede e oferecer um atendimento ainda mais eficiente e acessível.
+      </p>  
+    </div>
+    <div class="image2">
+    <div class="escritorio">
+      <img src="/SOBRENOS/header&icons-img/escritorio.jpg" alt="Imagem Inspiradora" class="escritorio-img">
+    </div>
+  </div>
+
+  </div>
+
+  <div class="contact-info">
+    <p class="contact-info-text">Se tiver mais dúvidas, entre em contato por:</p>
+    <p class="contact-info-item">
+      <img src="/footer-imgs/email-icon.png" alt="Email" class="contact-info-icon">
+      <a href="mailto:suporte@pixelon.com.br" class="contact-info-link">suporte@pixelon.com.br</a>
+    </p>
+    <p class="contact-info-item">
+      <img src="/footer-imgs/fone.png" alt="Telefone" class="contact-info-icon">
+      <a href="tel:+553840025678" class="contact-info-link">(38) 4002-5678</a>
+    </p>
+  </div>
+
+
+  <div class="gray-container-saibamais">
+    <p>Siga nossas páginas</p>
+    <div class="social-icons">
+      <img src="/SOBRENOS/header&icons-img/youtube-icon.webp" alt="YouTube" class="social-icons">
+      <img src="/SOBRENOS/header&icons-img/instagram-icon.png" alt="Instagram" class="social-icons">
+      <img src="/SOBRENOS/header&icons-img/facebook-icon.png" alt="Facebook" class="social-icons">
+    </div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer>      
+    <div class="all-footer">
+    <div class="footer-container">
+        <!-- Logo and Social Media -->
+        <div class="logo">
+            <img src="/footer-imgs/logo.png" alt="PixelON Logo">
+            <div class="social-icons">
+                <a href="#"><img src="/footer-imgs/instagram-icon.png" alt="instagram"></a>
+                <a href="#"><img src="/footer-imgs/youtube-icon.webp" alt="youtube"></a>
+                <a href="#"><img src="/footer-imgs/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links">
+            <h4 class="footer-title">Páginas</h4>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/PRODUTOS/produtos.html">Produtos</a></li>
+                <li><a href="/SOBRENOS/sobre.html">Sobre nós</a></li>
+                <li><a href="/SUPORTE/suporte.html">Área de Suporte</a></li>
+                <li><a href="/LOGIN/login.html">Entrar/Cadastrar</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h4  class="footer-title">Fale conosco</h4>
+            <ul>
+                <li><img src="/footer-imgs/email-icon.png" alt="Email"><a href="mailto:suporte@pixelon.com.br">suporte@pixelon.com.br</a></li>
+                <li><img src="/footer-imgs/facebook.png" alt="Facebook"><a href="#">www.facebook.com/PixelON</a></li>
+                <li><img src="/footer-imgs/fone.png" alt="Telefone"><a href="#">(38) 4002-5678</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+        <div class="saiba-mais">
+            <a href="/SAIBAMAIS/saibamais.html"  target="_blank"><p style="color: white;">Saiba mais</p></a>
+        </div>
+
+        <div class="payment">
+            <img src="/footer-imgs/visa.png" alt="Visa">
+            <img src="/footer-imgs/mastercard.png" alt="MasterCard">
+            <img src="/footer-imgs/hipercard.png" alt="Hipercard">
+            <img src="/footer-imgs/elo.png" alt="Elo">
+            <img src="/footer-imgs/pix.png" alt="Pix">
+        </div>
+    </div>
+  </div>
+  </footer>
+
+
+  <!--link js-->
+  <script src="sobre.js"></script>
+  </body>
+  </html>

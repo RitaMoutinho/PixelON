@@ -1,0 +1,1192 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel ON</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Jersey+10&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo1.png">
+  </head>
+  <body>
+    
+    <!-- Banner Top -->
+    <div class="inicial-banner-container">
+      <div class="inicial-banner">
+        <img src="/banners-imgs/banner-top.gif" class="bannertop-desktop">
+        
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="logo.png" alt="Logo Pixel" class="logo">
+      </div>
+      <input type="text" placeholder="Pesquise..." class="search-bar-mobile">
+      <div class="navbar-center">
+        <input type="text" placeholder="Pesquise..." class="search-bar">
+        <button class="search-icon">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search">
+        </button>
+      </div>
+      <div class="navbar-right">
+        <a href="/index.html" class="nav-text">Home</a>
+        <a href="/PRODUTOS/produtos.html" class="nav-text">Produtos</a>
+        <a href="/SOBRENOS/sobre.html" class="nav-text">Sobre nós</a>
+        <a href="/SUPORTE/suporte.html"><i class="fas fa-circle-question"></i></a>
+        <button onclick="location.href='LOGIN/login.html'" class="login-button">Login</button>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="/index.html" >Home</a>
+      <a href="/PRODUTOS/produtos.html">Produtos</a>
+      <a href="/SOBRENOS/sobre.html">Sobre nós</a>
+      <a href='PRODUTOS/produtos.html#topvendas'>Top vendas</a>
+      <a href='PRODUTOS/produtos.html#kitgamer'>Kitgamer</a>
+      <a href='PRODUTOS/produtos.html#laptops'>Laptops</a>
+      <a href='PRODUTOS/produtos.html#monitores'>Monitores</a>
+      <a href='PRODUTOS/produtos.html#perifericos'>Periféricos</a>
+      <a href='PRODUTOS/produtos.html#pecas'>Peças</a>
+      <a href="#">Seus favoritos</a>
+      <a href="/LOGIN/login.html">Login</a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    <!-- Secondary Navigation Bar -->
+    <div class="secondary-navbar">
+      <div class="row-all">
+        <a href="PRODUTOS/produtos.html#topvendas">Top vendas</a>
+        <a href="PRODUTOS/produtos.html#kitgamer">Kitgamer</a>
+        <a href="PRODUTOS/produtos.html#laptops">Laptops</a>
+        <a href="PRODUTOS/produtos.html#monitores">Monitores</a>
+        <a href="PRODUTOS/produtos.html#perifericos">Periféricos</a>
+        <a href="PRODUTOS/produtos.html#pecas">Peças</a>
+        <button class="fav-button">Seus favoritos</button>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+
+  <!--Roleta -->
+  <div id="popup">
+    <div class="popup-content">
+      <button class="close-btn">&times;</button>
+      <div id="title">Ganhe até 50% de Desconto!</div>
+      <div id="spin_the_wheel">
+        <canvas id="wheel" width="800" height="800"></canvas>
+        <div id="spin">GIRAR</div>
+      </div>
+      <div id="winMessage"></div>
+    </div>
+  </div>
+  
+
+  <!-- Caurosel -->
+  <section class="slider">
+    <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro">
+            <img src="/carousel-imgs/banner-genshin.png" alt="Slide Frete Grátis" class="img-desktop">
+      <img src="/carousel-imgs/banner-genshin-mobile.png" alt="" class="img-mobile"> 
+        </div>
+
+        <div class="slide-box ">
+            <img src="/carousel-imgs/banner-fortnite.png" alt="Slide Frete Grátis" class="img-desktop">
+            <img src="/carousel-imgs/banner-fortnite-mobile.png" alt="" class="img-mobile"> 
+        </div>
+
+        <div class="slide-box ">
+            <img src="/carousel-imgs/banner-black.png" alt="Slide Frete Grátis" class="img-desktop">
+            <img src="/carousel-imgs/banner-black-mobile.png" alt="" class="img-mobile"> 
+        </div>
+
+  <div class="nav-auto">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+  </div>
+
+  <div class="nav-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+  </div>
+
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- Icons mouse pc laptop -->
+  <h3 class="title">Pixel On oferece Monitores, Periféricos Laptops & muito mais!</h3>
+
+  <div class="icon-container">
+
+    <img onclick="location.href='PRODUTOS/produtos.html#monitores'"src="/icons-img/icon-pc.png" alt="Icon Computador" class="icon">
+
+    <img onclick="location.href='PRODUTOS/produtos.html#perifericos'" src="/icons-img/icon-mouse.png" alt="Icon Mouse" class="icon">
+
+    <img onclick="location.href='PRODUTOS/produtos.html#laptops'" src="/icons-img/icon-laptop.png" alt="Icon Laptop" class="icon">
+  </div>
+
+
+
+
+
+
+  <!--Você pode gostar -->
+  <div class="gray-container">
+    <h3 class="title2">Você pode Gostar</h3>
+
+    <div class="all-produtos-container">
+      <!-- Produto 1 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="/vcpodegostar-imgs/1.png" alt="PC Gamer">
+            <i class="fa-duotone fa-apartment"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3 class="info-card">PC Gamer Mancer Krampus, AMD Ryzen 5 5500, GeForce RTX 3060 12GB, 16GB DDR4</h3>
+                <div class="line">_________</div>
+                <h4 class="price-info">A vista</h4>
+                <h5 class="price">R$ 3.299,86</h5>
+                <div class="estrela-container">
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                </div>
+                <div class="buttons-container">
+                  <button class="cart-button">
+                    <span class="cart-text">Add ao carrinho</span>
+                    <span class="cart-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="cart-check">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </button>
+                  <button class="gradient-border-button">
+                    <span>Comprar Agora</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Produto 2 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="/vcpodegostar-imgs/2.png" alt="PC Gamer">
+            <i class="fa-duotone fa-apartment"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3 class="info-card">Pc Gamer Branco Ryzen 5 4600G, 4 Fans</h3>
+                <div class="line">_________</div>
+                <h4 class="price-info">A vista</h4>
+                <h5 class="price">R$ 2.501,99</h5>
+                <h4 class="price-oferta">R$ 2.700,00</h4> 
+                <div class="estrela-container">
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9734;</span>
+                </div>
+                <div class="buttons-container">
+                  <button class="cart-button">
+                    <span class="cart-text">Add ao carrinho</span>
+                    <span class="cart-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="cart-check">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </button>
+                  <button class="gradient-border-button">
+                    <span>Comprar Agora</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Produto 3 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="/vcpodegostar-imgs/3.png" alt="PC Gamer">
+            <i class="fa-duotone fa-apartment"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3 class="info-card">
+                  Kit Logitech G Aurora Collection Mouse + Mousepad - Rosa</h3>
+                <div class="line">_________</div>
+                <h4 class="price-info">A vista</h4>
+                <h5 class="price">R$ 662,84</h5>
+                <div class="estrela-container">
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                </div>
+                <div class="buttons-container">
+                  <button class="cart-button">
+                    <span class="cart-text">Add ao carrinho</span>
+                    <span class="cart-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="cart-check">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </button>
+                  <button class="gradient-border-button">
+                    <span>Comprar Agora</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Produto 4 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="/vcpodegostar-imgs/4.png" alt="PC Gamer">
+            <i class="fa-duotone fa-apartment"></i>
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3 class="info-card">Notebook Gamer Lenovo 3i i5 Linux 8GB 256GB </h3>
+                <div class="line">_________</div>
+                <h4 class="price-info">A vista</h4>
+                <h5 class="price">R$ 4.139,00</h5>
+                <h4 class="price-oferta">R$ 5.000,00</h4> 
+                <div class="estrela-container">
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9733;</span>
+                  <span class="estrela">&#9734;</span>
+                </div>
+                <div class="buttons-container">
+                  <button class="cart-button">
+                    <span class="cart-text">Add ao carrinho</span>
+                    <span class="cart-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="cart-check">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </button>
+                  <button class="gradient-border-button">
+                    <span>Comprar Agora</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--all card container tag fechamento-->    
+    </div>
+    
+
+  <!--Black background-->
+  <div class="black-container">
+  <!-- Setup dos sonhos -->
+    <h3 class="title3">Faça seu setup dos sonhos</h3>
+    <h4 class="subtitle">com os melhores descontos</h4>
+  <img src="/banners-imgs/setupdosonhos.jpg" class="setupdosonhos">
+
+  <!--Ofertas em destaques-->
+  <h3 class="title2">Ofertas em destaque</h3>
+  <!-- Container de todos os produtos -->
+  <div class="all-produtos-container">
+
+  <!-- Produto 1 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/1.png" alt="PC Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">
+              Mouse gamer com fio USB 7200 Dpi óptico LED RGB cor branco | Leroy Merlin
+            </h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 143,69</h5>
+            <h4 class="price-oferta">R$ 209,07</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9734;</span>
+              <span class="estrela">&#9734;</span>
+            </div>
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 2 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/2.png" alt="Mouse Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">PC Gamer Intel® Core™ I5, 8GB, SSD 240GB | GT</h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 1.108,60</h5>
+            <h4 class="price-oferta">R$ 1.599,98</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+            </div>
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 3 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/3.png" alt="PC Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">
+              Fone De Ouvido Headphone Bluetooth 5.0 Bateria Longa Duração
+            </h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 46,69</h5>
+            <h4 class="price-oferta">R$ 69,90</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9734;</span>
+            </div>
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 4 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/4.png" alt="PC Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">
+              Notebook Acer Aspire 5,15.6 Pol. FHD, Intel I5-12450H, 8GB DDR4, SSD 256
+            </h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 2.400,00</h5>
+            <h4 class="price-oferta">R$ 2.950,00</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9734;</span>
+              <span class="estrela">&#9734;</span>
+            </div>
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Produto 5 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/5.png" alt="Mouse Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">NUBWO Fone de ouvido G06 para jogos sem fio duplo com microfone</h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 248,00</h5>
+            <h4 class="price-oferta">R$ 320,90</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+            </div>
+          
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 6 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/6.png" alt="PC Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">
+              FIFINE Microfone USB para PC de jogos para podcasts de streaming
+            </h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 214,20</h5>
+            <h4 class="price-oferta">R$ 276,80</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9734;</span>
+            </div>
+        
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 7 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/7.png" alt="PC Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">
+              PC GAMER INTEL I7 10700 RTX 3060 RAM 16GB SSD 480GB
+            </h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price"> R$ 2.729,99</h5>
+            <h4 class="price-oferta"> R$ 3.100,99</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9734;</span>
+              <span class="estrela">&#9734;</span>
+            </div>
+        
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto 8 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/ofertas-imgs/8.png" alt="Mouse Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">Mouse Gamer Logitech G502 Lightspeed 16000DPI Wireless</h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 189,99</h5>
+            <h4 class="price-oferta">R$ 238,00</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9734;</span>
+            </div>
+        
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--mini banner-->
+  <img src="/banners-imgs/minibanner.webp" alt="Mini banner" class="minibanner">
+
+
+  <!-- Fechamento da div all-produtos-container -->
+  </div> 
+
+
+
+  <!--garantia de desempenho-->
+  <h3 class="title2">Garantia de desempenho</h3>
+  <div class="all-produtos-container">
+    <!-- Produto 1 -->
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="/garantia-imgs/1.png" alt="PC Gamer">
+        </div>
+        <div class="card-info-wrapper">
+          <div class="card-info">
+            <div class="card-info-title">
+              <h3 class="info-card">
+                Notebook Gamer Gigabyte Aorus 17, 17.3 Pol, Intel Core i7-13700H, QHD, 16GB DDR5
+              </h3>
+              <div class="line">_________</div>
+              <h4 class="price-info">À vista</h4>
+              <h5 class="price">R$ 5.000,00</h5>
+              <div class="estrela-container">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+              </div>
+              <div class="buttons-container">
+                <button class="cart-button">
+                  <span class="cart-text">Add ao carrinho</span>
+                  <span class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                  <span class="cart-check">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </button>
+                <button class="gradient-border-button">
+                  <span>Comprar Agora</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Produto 2 -->  
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="/garantia-imgs/2.png" alt="Mouse Gamer">
+        </div>
+        <div class="card-info-wrapper">
+          <div class="card-info">
+            <div class="card-info-title">
+              <h3 class="info-card">Gabinete Gamer NZXT H7 Flow - Lateral em Vidro Temperado</h3>
+              <div class="line">_________</div>
+              <h4 class="price-info">À vista</h4>
+              <h5 class="price">R$ 1.208,60</h5>
+              <h4 class="price-oferta">R$ 1.599,98</h4> 
+              <div class="estrela-container">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+              </div>
+              <div class="buttons-container">
+                <button class="cart-button">
+                  <span class="cart-text">Add ao carrinho</span>
+                  <span class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                  <span class="cart-check">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </button>
+                <button class="gradient-border-button">
+                  <span>Comprar Agora</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Produto 3 -->  
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="/garantia-imgs/3.png" alt="PC Gamer">
+        </div>
+        <div class="card-info-wrapper">
+          <div class="card-info">
+            <div class="card-info-title">
+              <h3 class="info-card">
+                Mouse Pad Pequeno De Tecido Logitech G Social Mousepad - Branco
+              </h3>
+              <div class="line">_________</div>
+              <h4 class="price-info">À vista</h4>
+              <h5 class="price">R$ 244,20</h5>
+              <div class="estrela-container">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+              </div>
+              <div class="buttons-container">
+                <button class="cart-button">
+                  <span class="cart-text">Add ao carrinho</span>
+                  <span class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                  <span class="cart-check">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </button>
+                <button class="gradient-border-button">
+                  <span>Comprar Agora</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Produto 4 -->  
+    <div class="card">
+      <div class="card-content">
+        <div class="card-image">
+          <img src="/garantia-imgs/4.png" alt="PC Gamer">
+        </div>
+        <div class="card-info-wrapper">
+          <div class="card-info">
+            <div class="card-info-title">
+              <h3 class="info-card">
+                Headset Gamer Hi-Res Bluetooth EDIFIER G5BT CAT
+              </h3>
+              <div class="line">_________</div>
+              <h4 class="price-info">À vista</h4>
+              <h5 class="price">R$ 399,00</h5>
+              <h4 class="price-oferta">R$ 450,00</h4> 
+              <div class="estrela-container">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+              </div>
+              <div class="buttons-container">
+                <button class="cart-button">
+                  <span class="cart-text">Add ao carrinho</span>
+                  <span class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                  <span class="cart-check">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </button>
+                <button class="gradient-border-button">
+                  <span>Comprar Agora</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  <!-- Produto 5 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/garantia-imgs/5.png" alt="Mouse Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">Microfone Gamer HyperX QuadCast S Antivibração Led RGB</h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 265,99</h5>
+            <h4 class="price-oferta">R$ 345,00</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+            </div>
+          
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Produto 6 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/garantia-imgs/6.png" alt="PC Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">
+              Notebook Gamer Lenovo IdeaPad Gaming 3 15IHU6, 15.6 Pol Intel I5
+            </h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 4.890,00</h5>
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+            </div>
+        
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Produto 7 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/garantia-imgs/7.png" alt="PC Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">
+              PC Gamer Pichau Lamia III, AMD Ryzen 5 3400G, 16GB DDR4, SSD 480GB
+            </h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price"> R$ 2.499,00</h5>
+            <h4 class="price-oferta"> R$ 3.100,00</h4> 
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+            </div>
+        
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Produto 8 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <img src="/garantia-imgs/8.png" alt="Mouse Gamer">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <div class="card-info-title">
+            <h3 class="info-card">Mouse Gamer Fortrek Cruiser New Edition 12000 Dpi RGB Preto</h3>
+            <div class="line">_________</div>
+            <h4 class="price-info">À vista</h4>
+            <h5 class="price">R$ 118,20</h5>
+            <div class="estrela-container">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+            </div>
+        
+            <div class="buttons-container">
+              <button class="cart-button">
+                <span class="cart-text">Add ao carrinho</span>
+                <span class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="cart-check">
+                  <i class="fas fa-check"></i>
+                </span>
+              </button>
+              <button class="gradient-border-button">
+                <span>Comprar Agora</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Fechamento da div all-produtos-container -->
+  </div> 
+
+  <!--Black background fechamento -->
+  </div>
+
+
+
+
+  <!--Ultimas reviews-->
+  <div class="container-review">
+    <p style="color: white; font-size: 24px; font-weight: bold;">Últimas Avaliações</p>
+    <div class="cards-review-container">
+      <div class="card-rewiew">
+        <div class="estrela-review-container ">
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+        </div>
+        
+        <h2 class="avaliacao-produto">Entrega Rápida</h2>
+        <p class="info-rewiew">Chegou antes do prazo!</p>
+        
+        <div class="imagem-nome">
+          <img src="/review-imgs/cliente.1.webp" alt="Foto de Alice" class="imgcliente">
+          <p class="namecliente">Alice</p>
+        </div>
+      </div>
+
+      <div class="card-rewiew">
+        <div class="estrela-review-container">
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+        </div>
+        
+        <h2 class="avaliacao-produto">Produto Excelente</h2>
+        <p class="info-rewiew">Melhor compra que fiz este ano!</p>
+        
+        <div class="imagem-nome">
+          <img src="/review-imgs/cliente.2.webp" alt="Foto de João" class="imgcliente">
+          <p class="namecliente">João</p>
+        </div>
+      </div>
+
+      <div class="card-rewiew">
+        <div class="estrela-review-container">
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+          <span class="estrela-review ">&#9733;</span>
+        </div>
+        
+        <h2 class="avaliacao-produto">Bom Atendimento</h2>
+        <p class="info-rewiew">Equipe muito atenciosa, recomendo!</p>
+        
+        <div class="imagem-nome">
+          <img src="/review-imgs/cliente.3.jpg" alt="Foto de Maria" class="imgcliente">
+          <p class="namecliente">Maria</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <!--Pixel On family-->
+  <h3 class="title3">Seu produto PIXEL ON em ação? Queremos ver! #PixelOnFamily</h3>
+  <h4 class="subtitle">Adoramos ver você exibindo o seu melhor setup! Participe da diversão, inspire-se e compartilhe o destaque usando #PixelOnFamily nas redes sociais.</h4>
+
+
+  <div class="container-clientes-setup">
+    <img src="pixelonfamily-imgs/setup1.jpg" alt="" class="cliente-setup">
+    <img src="pixelonfamily-imgs/setup2.jpg" alt="" class="cliente-setup">
+    <img src="pixelonfamily-imgs/setup3.jpg" alt="" class="cliente-setup">
+  </div>
+    
+
+
+
+  <!-- Footer -->
+  <footer>      
+    <div class="all-footer">
+    <div class="footer-container">
+        <!-- Logo and Social Media -->
+        <div class="logo">
+            <img src="/footer-imgs/logo.png" alt="PixelON Logo">
+            <div class="social-icons">
+                <a href="#"><img src="/footer-imgs/instagram-icon.png" alt="instagram"></a>
+                <a href="#"><img src="/footer-imgs/youtube-icon.webp" alt="youtube"></a>
+                <a href="#"><img src="/footer-imgs/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links">
+            <h4 class="footer-title">Páginas</h4>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/PRODUTOS/produtos.html">Produtos</a></li>
+                <li><a href="/SOBRENOS/sobre.html">Sobre nós</a></li>
+                <li><a href="/SUPORTE/suporte.html">Área de Suporte</a></li>
+                <li><a href="/LOGIN/login.html">Entrar/Cadastrar</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h4  class="footer-title">Fale conosco</h4>
+            <ul>
+                <li><img src="/footer-imgs/email-icon.png" alt="Email"><a href="mailto:suporte@pixelon.com.br">suporte@pixelon.com.br</a></li>
+                <li><img src="/footer-imgs/facebook.png" alt="Facebook"><a href="#">www.facebook.com/PixelON</a></li>
+                <li><img src="/footer-imgs/fone.png" alt="Telefone"><a href="#">(38) 4002-5678</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+        <div class="saiba-mais">
+            <a href="/SAIBAMAIS/saibamais.html"  target="_blank"><p style="color: white;">Saiba mais</p></a>
+        </div>
+
+        <div class="payment">
+            <img src="/footer-imgs/visa.png" alt="Visa">
+            <img src="/footer-imgs/mastercard.png" alt="MasterCard">
+            <img src="/footer-imgs/hipercard.png" alt="Hipercard">
+            <img src="/footer-imgs/elo.png" alt="Elo">
+            <img src="/footer-imgs/pix.png" alt="Pix">
+        </div>
+    </div>
+  </div>
+  </footer>
+
+  <!--Gray container fechamento -->
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- link js -->
+  <script src="script.js"></script>
+
+  </body>
+  </html>

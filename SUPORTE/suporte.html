@@ -1,0 +1,215 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel ON</title>
+    <link rel="stylesheet" href="suporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Hind+Mysuru:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/logo1.png">
+  </head>
+  <body>
+    
+    <!-- Banner Top -->
+    <div class="inicial-banner-container">
+      <div class="inicial-banner">
+        <img src="/banners-imgs/banner-top.gif" class="bannertop-desktop">
+        
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="/logo.png" alt="Logo Pixel" class="logo">
+      </div>
+      <input type="text" placeholder="Pesquise..." class="search-bar-mobile">
+      <div class="navbar-center">
+        <input type="text" placeholder="Pesquise..." class="search-bar">
+        <button class="search-icon">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search">
+        </button>
+      </div>
+      <div class="navbar-right">
+        <a href="/index.html" class="nav-text">Home</a>
+        <a href="/PRODUTOS/produtos.html" class="nav-text">Produtos</a>
+        <a href="/SOBRENOS/sobre.html" class="nav-text">Sobre nós</a>
+        <a href="/SUPORTE/suporte.html"><i class="fas fa-circle-question"></i></a>
+        <button onclick="location.href='/LOGIN/login.html'" class="login-button">Login</button>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="/index.html" >Home</a>
+      <a href="/PRODUTOS/produtos.html">Produtos</a>
+      <a href="/SOBRENOS/sobre.html">Sobre nós</a>
+      <a href='/PRODUTOS/produtos.html#topvendas'>Top vendas</a>
+      <a href='/PRODUTOS/produtos.html#kitgamer'>Kitgamer</a>
+      <a href='/PRODUTOS/produtos.html#laptops'>Laptops</a>
+      <a href='/PRODUTOS/produtos.html#monitores'>Monitores</a>
+      <a href='/PRODUTOS/produtos.html#perifericos'>Periféricos</a>
+      <a href='/PRODUTOS/produtos.html#pecas'>Peças</a>
+      <a href="#">Seus favoritos</a>
+      <a href="/LOGIN/login.html">Login</a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    <!-- Secondary Navigation Bar -->
+    <div class="secondary-navbar">
+      <div class="row-all">
+        <a href="/PRODUTOS/produtos.html#topvendas">Top vendas</a>
+        <a href="/PRODUTOS/produtos.html#kitgamer">Kitgamer</a>
+        <a href="/PRODUTOS/produtos.html#laptops">Laptops</a>
+        <a href="/PRODUTOS/produtos.html#monitores">Monitores</a>
+        <a href="/PRODUTOS/produtos.html#perifericos">Periféricos</a>
+        <a href="/PRODUTOS/produtos.html#pecas">Peças</a>
+        <button class="fav-button">Seus favoritos</button>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+
+  <!-- Suporte -->
+
+  <!-- Header -->
+  <header>
+    <img src="/SUPORTE/header&icons-imgs/header.gif" alt="Imagem de Fundo">
+    <div class="header-content">
+      <h1 class="header-title">Bem vindo a área de Suporte</h1>
+      <p class="header-subtitle">sempre trazendo as melhores soluções para o seu dia a dia!</p>
+
+      <!-- Botão saiba mais -->
+      <div class="button-wrapper">
+        <button class="shine-button" onclick="window.open('/SAIBAMAIS/saibamais.html', '_blank')">
+          <span class="shine-content">Saiba mais</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Título abaixo do header -->
+  <h1 class="title">Como podemos te ajudar?</h1>
+  <div class="all-white-cards-container">
+    <div class="white-card">
+      <img src="cards-imgs/Autoatendimento.png" class="white-card-icon">
+      <p class="white-card-title">Autoatendimento</p>
+    </div>
+
+    <div class="white-card">
+      <img src="cards-imgs/Suporteonline.png" class="white-card-icon">
+      <p class="white-card-title">Suporte  online</p>
+    </div>
+
+    <div class="white-card">
+      <img src="cards-imgs/Reclamaçoes.png" class="white-card-icon">
+      <p class="white-card-title">Reclamações</p>
+    </div>
+  </div>
+
+  <div class="all-white-cards-container">
+    <div class="white-card">
+      <img src="cards-imgs/Pagamento.png" class="white-card-icon">
+      <p class="white-card-title">Pagamento</p>
+    </div>
+
+    <div class="white-card">
+      <img src="cards-imgs/Rastrearpedido.png" class="white-card-icon">
+      <p class="white-card-title">Rastrear pedido</p>
+    </div>
+
+    <div class="white-card">
+      <img src="cards-imgs/Assistente.png" class="white-card-icon">
+      <p class="white-card-title">Assistente</p>
+    </div>
+  </div>
+
+  <!-- Contato -->
+  <div class="contact-info">
+    <p class="contact-info-text">Se tiver mais dúvidas, entre em contato por:</p>
+    <p class="contact-info-item">
+      <img src="/footer-imgs/email-icon.png" alt="Email" class="contact-info-icon">
+      <a href="mailto:suporte@pixelon.com.br" class="contact-info-link">suporte@pixelon.com.br</a>
+    </p>
+    <p class="contact-info-item">
+      <img src="/footer-imgs/fone.png" alt="Telefone" class="contact-info-icon">
+      <a href="tel:+553840025678" class="contact-info-link">(38) 4002-5678</a>
+    </p>
+  </div>
+
+
+  <div class="gray-container-saibamais">
+    <p>Siga nossas páginas</p>
+    <div class="social-icons">
+      <img src="/SOBRENOS/header&icons-img/youtube-icon.webp" alt="YouTube" class="social-icons">
+      <img src="/SOBRENOS/header&icons-img/instagram-icon.png" alt="Instagram" class="social-icons">
+      <img src="/SOBRENOS/header&icons-img/facebook-icon.png" alt="Facebook" class="social-icons">
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>      
+    <div class="all-footer">
+    <div class="footer-container">
+        <!-- Logo and Social Media -->
+        <div class="logo">
+            <img src="/footer-imgs/logo.png" alt="PixelON Logo">
+            <div class="social-icons">
+                <a href="#"><img src="/footer-imgs/instagram-icon.png" alt="instagram"></a>
+                <a href="#"><img src="/footer-imgs/youtube-icon.webp" alt="youtube"></a>
+                <a href="#"><img src="/footer-imgs/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links">
+            <h4 class="footer-title">Páginas</h4>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/PRODUTOS/produtos.html">Produtos</a></li>
+                <li><a href="/SOBRENOS/sobre.html">Sobre nós</a></li>
+                <li><a href="/SUPORTE/suporte.html">Área de Suporte</a></li>
+                <li><a href="/LOGIN/login.html">Entrar/Cadastrar</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h4  class="footer-title">Fale conosco</h4>
+            <ul>
+                <li><img src="/footer-imgs/email-icon.png" alt="Email"><a href="mailto:suporte@pixelon.com.br">suporte@pixelon.com.br</a></li>
+                <li><img src="/footer-imgs/facebook.png" alt="Facebook"><a href="#">www.facebook.com/PixelON</a></li>
+                <li><img src="/footer-imgs/fone.png" alt="Telefone"><a href="#">(38) 4002-5678</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+        <div class="saiba-mais">
+            <a href="/SAIBAMAIS/saibamais.html"  target="_blank"><p style="color: white;">Saiba mais</p></a>
+        </div>
+
+        <div class="payment">
+            <img src="/footer-imgs/visa.png" alt="Visa">
+            <img src="/footer-imgs/mastercard.png" alt="MasterCard">
+            <img src="/footer-imgs/hipercard.png" alt="Hipercard">
+            <img src="/footer-imgs/elo.png" alt="Elo">
+            <img src="/footer-imgs/pix.png" alt="Pix">
+        </div>
+    </div>
+  </div>
+  </footer>
+
+  <!--link js-->
+  <script src="suporte.js"></script>
+  </body>
+  </html>
