@@ -543,13 +543,11 @@
     margin-top: 20px;
     gap: 20px;
     }
- #productContainer {
-   gap:5px;
- }
+
     .all-produtos-container-filter{
     display: flex; 
     flex-wrap: wrap;
-    gap: 5px; 
+    gap: 20px; 
     justify-content: space-around;
     margin-left: 0px;
     margin-right: 20px;
@@ -558,6 +556,15 @@
     }
   }
 
+@media (max-width: 375px) {
+    .all-produtos-container{
+    gap: 5px;
+    }
+
+    #productContainer{
+    gap:5px;
+    }
+}
   .price, .price-oferta {
     display: inline-block;
   }
