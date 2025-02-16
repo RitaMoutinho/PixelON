@@ -863,6 +863,75 @@
     }
 
   }
+/* media pra telas menores ainda */
+@media (max-width: 375px) {
+    .cards {
+        gap: 3px;
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .card {
+        height: 220px;
+        width: 140px;
+        padding: 10px 10px 0 0;
+    }
+
+    .card-image img {
+        height: 80px;
+        width: 110px;
+    }
+
+    .card-info-title > h3 {
+        font-size: 7px;
+        margin-bottom: 0px;
+        line-height: normal;
+    }
+
+    .line {
+        font-size: 9px;
+        margin-top: 0px;
+    }
+
+    .card-info-title > h4 {
+        font-size: 6px;
+    }
+
+    .card-info-title > h5 {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .buttons-container {
+        margin-top: 0px;
+        display: block;
+    }
+
+    .cart-button {
+        height: 18px;
+        width: 90px;
+        font-size: 0.55rem;
+        text-align: center;
+        margin-bottom: 8px;
+        display: none;
+    }
+
+    .gradient-border-button {
+        padding: 6px 15px;
+        font-size: 0.55rem;
+        display: none;
+    }
+
+    .estrela-container {
+        display: flex;
+    }
+
+    .estrela {
+        font-size: 10px;
+        color: gold;
+        margin-right: 4px;
+    }
+}
 
 
   /* Mini banner*/
