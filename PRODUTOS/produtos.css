@@ -582,6 +582,17 @@
     }
   }
 
+ /* Ajustes para dispositivos móveis menores*/
+ @media (max-width: 375px) {
+    .all-produtos-container-filter{
+    gap:5px;
+    }
+      
+}
+
+
+
+
   :root {
     --bg-color: rgb(20, 20, 20);
     --card-color: rgb(23, 23, 23);
