@@ -585,7 +585,7 @@
 
     #productContainer{
       margin-left: 0;
-      gap: 0;
+      gap: 10;
     }
 }
   .price, .price-oferta {
