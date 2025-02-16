@@ -553,6 +553,19 @@
       gap: 8px;
     }
   }
+/* Estilo para dispositivos móveis menores */
+@media (max-width: 375px) {
+      .icon-container img {
+      height: 70px; 
+      width: 90px; 
+    }
+
+    .icon-container {
+      margin-top: 20px;
+      justify-content: space-evenly; 
+      gap: 5px;
+    }
+}
 
   /* Roleta */
   body.popup-open {
