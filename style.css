@@ -664,7 +664,10 @@
     #popup {
       padding: 10px;
     }
-
+    
+    .close-btn {
+      margin-top: 0;
+    }
     .popup-content {
       width: 95%;
       max-width: none;
