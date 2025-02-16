@@ -1035,39 +1035,39 @@
 /* media pra telas menores ainda */
 @media (max-width: 375px) {
     .cards {
-        gap: 3px;
-        max-width: 340px;
+        gap: 2px;
+        max-width: 320px;
         width: 100%;
     }
 
     .card {
-        height: 220px;
-        width: 140px;
-        padding: 10px 10px 0 0;
+        height: 180px;
+        width: 120px;
+        padding: 8px 8px 0 0;
     }
 
     .card-image img {
-        height: 100px;
-        width: 110px;
+        height: 80px;
+        width: 90px;
     }
 
     .card-info-title > h3 {
-        font-size: 7px;
+        font-size: 6px;
         margin-bottom: 0px;
         line-height: normal;
     }
 
     .line {
-        font-size: 9px;
+        font-size: 8px;
         margin-top: 0px;
     }
 
     .card-info-title > h4 {
-        font-size: 0.5em;
+        font-size: 0.45em;
     }
 
     .card-info-title > h5 {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 0px;
     }
 
@@ -1077,17 +1077,17 @@
     }
 
     .cart-button {
-        height: 18px;
-        width: 90px;
-        font-size: 0.55rem;
+        height: 15px;
+        width: 80px;
+        font-size: 0.5rem;
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
         display: none;
     }
 
     .gradient-border-button {
-        padding: 6px 15px;
-        font-size: 0.55rem;
+        padding: 5px 12px;
+        font-size: 0.5rem;
         display: none;
     }
 
@@ -1096,11 +1096,12 @@
     }
 
     .estrela {
-        font-size: 16px;
+        font-size: 14px;
         color: gold;
-        margin-right: 4px;
+        margin-right: 3px;
     }
 }
+
 
   /* Setup dos sonhos*/
   .setupdosonhos{
