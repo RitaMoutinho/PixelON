@@ -302,7 +302,7 @@
   
   @media screen and (max-width: 768px) {
     .navbar{
-      top:40px;
+      top:35px;
     }
     .navbar-center {
         display: none; 
@@ -323,7 +323,7 @@
     }
   
     .secondary-navbar {
-      top: 68px; 
+      top: 60px; 
         padding-bottom: 20px;
     }
   
