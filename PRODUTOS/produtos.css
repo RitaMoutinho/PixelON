@@ -374,7 +374,7 @@
   
   @media screen and (max-width: 768px) {
     .navbar{
-      top:50px;
+      top:40px;
     }
     .navbar-center {
         display: none; 
