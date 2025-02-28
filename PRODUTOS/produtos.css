@@ -316,7 +316,7 @@
     display: none;
     background-color: #333;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 20px;
     width: 250px;
